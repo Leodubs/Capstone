@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<!-- programme : si l'envoi des données du formulaire s'est bien déroulé, afficher l'alerte -->
+<%# if (response.statusCode >= 200 && response.statusCode < 300) { %>
+    <div class="alert alert-success d-flex align-items-center visually-hidden" role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+            Thanks for reaching out, I'll get back to you !
+        </div>
+    </div>
+<!-- sinon ? afficher le formulaire de contact, mettre une alerte, rediriger à l'accueil... ? -->
+    <%# } else { %>
+        <form class="" id="">
+            <div class="mb-3"><input name="name" type="text" class="feedback-input" placeholder="First name" /></div>
+            <div class="mb-3"><input name="email" type="text" class="feedback-input" placeholder="Email" /></div>
+            <div class="mb-3"><textarea name="text" class="feedback-input" placeholder="Message"></textarea></div>
+            <div class="mb-3"><input type="submit" value="Send" /></div>
+        </form>
+    <%# } %>
+
+    <%- include("partials/footer.ejs") %>

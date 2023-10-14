@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<div class="container-fluid" style="text-align: left;">
+    <h4 class="py-5">Aujourd'hui, <%= dateOfTheDay %></h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2">
+        <div class="col" style="justify-content: center; align-items: center;">
+            <ul style="list-style-type: '\2705    ';">
+                <% lessonsDone.forEach((lessonCheck) => { %>
+                    <li> <%= lessonCheck %></li>
+                <% }) %>
+            </ul>
+        </div>
+        <div class="col" style="justify-content: center; align-items: center;">
+            <ul style="list-style-type: '\1F440    ';">
+                <% lessonsToCome.forEach((lesson) => { %>
+                    <li><%= lesson %></li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
+
+<!-- class="col d-flex w-50" / flex-md-equal w-100 -->

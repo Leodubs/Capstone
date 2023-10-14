@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bandname.css">
+  <title>Band Generator</title>
+</head>
+
+<body>Eleonore Dubois' Capstone app
+
+  <main>
+Your bandname is ...
+
+    <% if (locals.adjective && locals.noun) { %>
+      <!-- si on laisse l'adj/nom bloqués ensemble, ils font moins de combinaison (locals.bandName) -->
+      <h1><%= adjective %> <%= noun %></h1>
+    <% } else { %>
+      <h1>👇</h1>
+    <% }; %>
+<form action="/submit" method="POST">
+  <input type="submit" value="Go get it">
+</form>
+
+</main>
+
+<footer>
+  <% const d = new Date(); %>
+  <% let year = d.getFullYear(); %>
+  <p>Copyright © <%= year %></p>
+  <!-- shortcode : new Date().getFullYear() -->
+</footer>
+</body>
+
+</html>

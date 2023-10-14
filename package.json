@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "capstone_bootstrap_cover",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eleonore Dubois",
+  "license": "ISC",
+  "description": ""
+}

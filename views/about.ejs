@@ -1,0 +1,68 @@
+<%- include("partials/header.ejs") %>
+
+<!-- Projet du moment -->
+<div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+<!-- Image -->
+    <div class="mx-auto" style="width: 100%; height: 250px;" data-bs-toggle="modal" data-bs-target="#currentProject"><img class="black-bg" src="images/lafermedesitinerants-V2.png" class="img-fluid" style="width: 100%; border-radius: 250px 250px 0 0;" alt="la-ferme-des-itinerants-projet-de-site">
+        <div class="position-absolute bottom-50 start-50 translate-middle">
+        <!-- titre -->
+        <h2>Farm online</h2>
+        <!-- sous-titre -->
+        <p class="lead">How to program the living ?</p>
+        <!-- Badge -->
+        <large class="d-inline-flex px-2 py-1 fw-semibold text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 me-2">Release : Sept. 23</large>
+        </div>
+    </div>
+<!-- Modal -->
+    <div class="modal fade" id="currentProject" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <img class="img-fluid w-100" src="images/lafermedesitinerants-V2.png" alt="la-ferme-des-itinerants-maquette-de-site">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- status -->
+<div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+    <h2 class="py-3">Learning</h2>
+
+        <!-- detail about knowledge (progression bar clickable) -->
+        <a href="/knowledge" title="Click for details">
+
+            <!-- progression bar -->
+            <div class="progress-stacked">
+                <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                <div class="progress-bar text-bg-success">Frontend</div>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                <div class="progress-bar text-bg-info">Web design</div>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                <div class="progress-bar text-bg-secondary">Backend</div>
+                </div>
+                <div class="progress d-none" role="progressbar" aria-label="Segment four" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    <div class="progress-bar text-bg-light">Deployment</div>
+                </div>
+            </div>
+        </a>
+        
+    <!-- the app brewery logo -->
+    <div class="mt-2 py-3"><a href="https://appbrewery.com/" target="_blank"><img src="images/TheAppBrewery-Code-Logo-White.png" style="width: 25%;"></a></div>
+
+    <!-- comment -->
+    <code>
+    <div class="mt-2 py-3">
+        <p>UX gets all my attention. Styles sheet does not.</p>
+        <a href="https://www.canva.com/design/DAFrtWL9aJQ/Q9FXYuhygE8iW5PLtvAfzQ/view?utm_content=DAFrtWL9aJQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" alt="CV-Eleonore-Dubois" target="_blank" id="lastClick">Get to my Canva resume</a>
+    </div>
+    </code>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
+
+

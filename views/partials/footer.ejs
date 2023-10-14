@@ -1,0 +1,23 @@
+<!-- fin de la main section -->
+</main>
+
+<!-- footer -->
+    <footer class="mt-auto">
+        <div class="text-white-50">
+            <p><a href="/legal">Mentions légales</a> © <%= new Date().getFullYear() %></p>
+
+            <!-- Modal -->
+            <!-- <a href=# data-bs-toggle="modal" data-bs-target="#mentionslegales">Mentions légales</a> -->
+            <!-- on est déjà dans le footer (donc dans le dossier partials), attention au chemin : -->                           
+            <%# include("legalmodal.ejs") %>
+            <!-- ne pas oublier ce div dans legalmodal.ejs -->
+        </div>
+    </footer>
+
+<!-- fin de la division ouverte en header -->
+</div>
+
+<!-- lien distant vers le script : -->
+<script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
