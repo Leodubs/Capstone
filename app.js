@@ -91,7 +91,7 @@ app.listen(port, () => {
 
 
 // constants
-const items = ["Site vitrine","Module de commande de produits", "Moteur de mauvaise foi", "Fromage de chèvre cru", "Routine 🤸🪑🤸", "API champagne"];
+const items = ["Module de réservation", "Moteur de mauvaise foi", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
 
 const lessons = [
 "Databases",  
