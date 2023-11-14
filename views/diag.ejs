@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DPE</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body id="app">
+  <form class="container" action="/submit" method="post">
+    
+    <div class="horizontal-container">
+      <h4>Score de votre logement : 
+        <% if (locals.dpeScore) { %>
+        <%= dpeScore %> kWh/an/m² d'énergie primaire
+        <% } %>
+      </h4>
+    </div>
+
+    <h2 id="title">
+      Diagnostic de performance énergétique
+    </h2>
+
+    <div class="answer-container">
+      <input type="text" name="consoElec" id="consoInput" placeholder="Conso électriques" autofocus>
+      <label for="consoElec"> kWh/an</label>
+      <input type="text" name="surfaceLogement" id="surfaceInput" placeholder="Surface du logement">
+      <label for="surfaceLogement"> m²</label>
+    </div>
+    
+    <button type="submit">Calculer votre DPE</button>
+
+  </form>
+
+</body>
+</html>
