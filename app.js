@@ -86,7 +86,7 @@ app.post("/todolist", (req, res) => {
 });
 
 // render DPE result
-app.post("/submit", (req, res) => {
+app.post("/calculate", (req, res) => {
     res.render("diag.ejs", { 
         dpeScore: result
     });
