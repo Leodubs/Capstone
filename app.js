@@ -66,6 +66,11 @@ app.get("/todolist", (req, res) => {
     res.render("todolist.ejs", {newListItems: items});
 });
 
+// send to the diag (DPE)
+app.get("/diag", (req, res) => {
+    res.render("diag.ejs");
+});
+
 // render bandname
 app.post("/submit", (req, res) => {
     const randomAdj = adj[Math.floor(Math.random() * adj.length)];
@@ -80,6 +85,13 @@ app.post("/todolist", (req, res) => {
     res.redirect("/todolist");
 });
 
+// render DPE result
+app.post("/submit", (req, res) => {
+    res.render("diag.ejs", { 
+        dpeScore: result
+    });
+});
+
 // express server running
 app.listen(port, () => {
     console.log("Server started on port", port);
@@ -87,9 +99,16 @@ app.listen(port, () => {
 
 
 
-// constants
+// constantes
+
+    // calcul DPE
+const coeff = 2.33;
+const result = Math.round(req.body["consoElec"] * coeff / req.body["surfaceLogement"]);
+
+    // todolist
 const items = ["Module de réservation", "Moteur de mauvaise foi", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
 
+    // knowledge
 const lessons = [
 "Databases",  
 "SQL",  
@@ -105,6 +124,7 @@ const lessons = [
 "NFT minting, buying and selling logic"
 ];
 
+    // bandname generator
 const adj = [
     "abandoned",
     "able",
