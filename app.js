@@ -33,10 +33,10 @@ app.get("/playground", (req, res) => {
 app.get("/knowledge", (req, res) => {
     let today = new Date();
     let options = {weekday : "long", day: "numeric", month: "long"}
-    let day = today.toLocaleDateString(undefined, options);
+    let day = today.toLocaleDateString("fr-FR", options);
     // shortcode : 
     const data = {
-        dateOfTheDay: new Date().toLocaleDateString(undefined, {weekday : "long", day: "numeric", month: "long"}),
+        dateOfTheDay: new Date().toLocaleDateString("fr-FR", {weekday : "long", day: "numeric", month: "long"}),
         lessonsDone: [
         "Web Design", 
         "HTML 5",  
