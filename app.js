@@ -31,9 +31,6 @@ app.get("/playground", (req, res) => {
 
 // knowledge
 app.get("/knowledge", (req, res) => {
-    let today = new Date();
-    let options = {weekday : "long", day: "numeric", month: "long"}
-    let day = today.toLocaleDateString("fr-FR", options);
     // shortcode : 
     const data = {
         dateOfTheDay: new Date().toLocaleDateString("fr-FR", {weekday : "long", day: "numeric", month: "long"}),
