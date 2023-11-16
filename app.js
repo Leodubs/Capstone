@@ -148,7 +148,7 @@ const commentG = "Classe G 👉 logement très énergivore";
 let comment = "Coolos ta maison passive 🤙";
 
     // todolist
-const items = ["Module de réservation", "Moteur de mauvaise foi", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
+const items = ["Diagnostic de performance énergétique", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
 
     // knowledge
 const lessons = [
