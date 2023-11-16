@@ -132,18 +132,18 @@ let surface = [];
 const result = conso * coeff / surface;
     // catégories post-2021 (score maximum), considérant classG > 420
 const classA = 70;
-const commentA = "Classe A 👉 logement économe";
+const commentA = "A → logement économe";
 const classB = 110;
-const commentB = "Classe B 👉 logement basse consommation";
+const commentB = "B → logement basse consommation";
 const classC = 180;
-const commentC ="Classe C 👉 logement performant";
+const commentC ="C → logement performant";
 const classD = 250;
-const commentD = "Classe D 👉 logement moyen";
+const commentD = "D → logement moyen";
 const classE = 330;
-const commentE = "Classe E 👉 logement très moyen";
+const commentE = "E → logement très moyen";
 const classF = 420;
-const commentF = "Classe F 👉 logement énergivore";
-const commentG = "Classe G 👉 logement très énergivore";
+const commentF = "F → logement énergivore";
+const commentG = "G → logement très énergivore";
     // commentaire par défaut
 let comment = "Coolos ta maison passive 🤙";
 
