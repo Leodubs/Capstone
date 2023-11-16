@@ -8,29 +8,29 @@
   <title>Band Generator</title>
 </head>
 
-<body><a href="/">Eleonore Dubois' Capstone</a> app
+<body>Capstone app
 
   <main>
 Your bandname is ...
 
+    <!-- on vérifie que adjective & noun existent -->
     <% if (locals.adjective && locals.noun) { %>
       <!-- si on laisse l'adj/nom bloqués ensemble, ils font moins de combinaison (locals.bandName) -->
       <h1><%= adjective %> <%= noun %></h1>
-    <% } else { %>
-      <h1>👇</h1>
-    <% }; %>
-<form action="/submitBandname" method="POST">
-  <input type="submit" value="Go get it">
-</form>
+    <% } %>
+      <form action="/submitBandname" method="POST" style="margin-top: 30px;">
+        <div class="pick">
+          <input type="submit" class="text" value="🤟">
+        </div>
+      </form>
+    </main>
 
-</main>
-
-<footer>
-  <% const d = new Date(); %>
-  <% let year = d.getFullYear(); %>
-  <p>Copyright © <%= year %></p>
-  <!-- shortcode : new Date().getFullYear() -->
-</footer>
+  <footer>
+    <% const d = new Date(); %>
+    <% let year = d.getFullYear(); %>
+    <p>© <a href="/">Eleonore Dubois</a> <%= year %></p>
+    <!-- shortcode : new Date().getFullYear() -->
+  </footer>
 </body>
 
 </html>
