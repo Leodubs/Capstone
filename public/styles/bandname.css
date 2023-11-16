@@ -1,16 +1,16 @@
-a, body {
+body {
     background: #222;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
       helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     color: hotpink;
-    text-decoration: none;
-  }
+}
 
-a:hover {
-    color: white;
+a {
+    color: #ec9;
+    text-decoration: none;
 }
   
-  main {
+main {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -21,24 +21,42 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
+}
   
-  h1 {
+h1 {
     font-size: 3.5rem;
-  }
+}
   
-  input {
-    appearance: none;
+input {
+appearance: none;
     -webkit-appearance: none;
     border: 0;
-    font-size: 0.9rem;
-    background: #888;
-    padding: 1rem;
-    color: white;
+    font-size: 40px;
+    background: transparent;
+    padding: 10px;
     cursor: pointer;
-  }
-  
-  footer {
+    position: relative;
+    top: 20px;
+    margin-left: 8px;
+}
+
+.pick {
+    height: 100px;
+    width: 100px;
+    background: hotpink;
+    border: #000 1px solid;
+    box-shadow: inset 5px 5px 3px #ec9,
+      4px 2px 10px 3px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 100% 50%;
+    /* transform: rotate(45deg); */
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
     position: absolute;
     bottom: 0;
-  }
+}
