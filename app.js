@@ -162,8 +162,6 @@ const commentF = "F → logement énergivore";
 const colorF = "#ff8201;";
 const commentG = "G → logement très énergivore";
 const colorG = "#ff3338;";
-    // commentaire par défaut
-let comment = "Coolos ta maison passive 🤙";
 
     // todolist
 const items = ["Diagnostic de performance énergétique", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
