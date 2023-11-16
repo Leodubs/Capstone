@@ -77,13 +77,13 @@ button:hover {
   color: mediumspringgreen;
 }
 
-footer, a {
+footer {
   color: #f2f2f2;
   text-align: center;
   font-weight: 600;
-  text-decoration: none;
 }
 
-a:hover {
+a {
   color: mediumspringgreen;
+  text-decoration: none;
 }
