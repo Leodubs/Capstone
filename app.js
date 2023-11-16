@@ -91,7 +91,8 @@ app.post("/submitDiag", (req, res) => {
     commentResult(result);
     res.render("diag.ejs", { 
         dpeScore: result,
-        dpeComment: comment
+        dpeComment: comment,
+        dpeColor: color
     });
 });
 
@@ -105,21 +106,29 @@ app.listen(port, () => {
 function commentResult(result) {
     if (result <= classA) {
         comment = commentA;
+        color = colorA;
     } else if (result >= classA && result <= classB){
         comment = commentB;
+        color = colorB;
     } else if (result >= classB && result <= classC){
         comment = commentC;
+        color = colorC
     } else if (result >= classC && result <= classD){
         comment = commentD;
+        color = colorD;
     } else if (result >= classD && result <= classE){
         comment = commentE;
+        color = colorE;
+        color = colorE;
     } else if (result >= classE && result <= classF){
         comment = commentF;
+        color = colorF;
     } else if (result > classF){
         comment = commentG;
+        color = colorG;
     }
-    console.log(comment)
-    return comment;
+    console.log(color)
+    return comment, color;
 };
 
 
@@ -130,20 +139,29 @@ const coeff = 2.33;
 let conso = [];
 let surface = [];
 const result = conso * coeff / surface;
+let comment = "Coolos ta maison passive 🤙";
+let color = "#00264d;";
     // catégories post-2021 (score maximum), considérant classG > 420
 const classA = 70;
 const commentA = "A → logement économe";
+const colorA = "#007703;";
 const classB = 110;
 const commentB = "B → logement basse consommation";
+const colorB = "#4faa07;";
 const classC = 180;
 const commentC ="C → logement performant";
+const colorC = "#ccd603;";
 const classD = 250;
 const commentD = "D → logement moyen";
+const colorD = "#ffef6d;";
 const classE = 330;
 const commentE = "E → logement très moyen";
+const colorE = "#ffc663;";
 const classF = 420;
 const commentF = "F → logement énergivore";
+const colorF = "#ff8201;";
 const commentG = "G → logement très énergivore";
+const colorG = "#ff3338;";
     // commentaire par défaut
 let comment = "Coolos ta maison passive 🤙";
 
