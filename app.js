@@ -87,8 +87,11 @@ app.post("/todolist", (req, res) => {
 
 // render DPE result
 app.post("/submit", (req, res) => {
+    const result = Math.round(req.body["consoElec"] * coeff / req.body["surfaceLogement"]);
+    commentResult(result);
     res.render("diag.ejs", { 
-        dpeScore: result
+        dpeScore: result,
+        dpeComment: comment
     });
 });
 
@@ -98,12 +101,51 @@ app.listen(port, () => {
 });
 
 
+// fonctions
+function commentResult(result) {
+    if (result <= classA) {
+        comment = commentA;
+    } else if (result >= classA && result <= classB){
+        comment = commentB;
+    } else if (result >= classB && result <= classC){
+        comment = commentC;
+    } else if (result >= classC && result <= classD){
+        comment = commentD;
+    } else if (result >= classD && result <= classE){
+        comment = commentE;
+    } else if (result >= classE && result <= classF){
+        comment = commentF;
+    } else if (result > classF){
+        comment = commentG;
+    }
+    console.log(comment)
+    return comment;
+};
+
 
 // constantes
 
     // calcul DPE
 const coeff = 2.33;
-const result = Math.round(req.body["consoElec"] * coeff / req.body["surfaceLogement"]);
+let conso = [];
+let surface = [];
+const result = conso * coeff / surface;
+    // catégories post-2021 (score maximum), considérant classG > 420
+const classA = 70;
+const commentA = "Classe A 👉 logement économe";
+const classB = 110;
+const commentB = "Classe B 👉 logement basse consommation";
+const classC = 180;
+const commentC ="Classe C 👉 logement performant";
+const classD = 250;
+const commentD = "Classe D 👉 logement moyen";
+const classE = 330;
+const commentE = "Classe E 👉 logement très moyen";
+const classF = 420;
+const commentF = "Classe F 👉 logement énergivore";
+const commentG = "Classe G 👉 logement très énergivore";
+    // commentaire par défaut
+let comment = "Coolos ta maison passive 🤙";
 
     // todolist
 const items = ["Module de réservation", "Moteur de mauvaise foi", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
