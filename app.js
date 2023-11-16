@@ -72,7 +72,7 @@ app.get("/diag", (req, res) => {
 });
 
 // render bandname
-app.post("/submit", (req, res) => {
+app.post("/submitBandname", (req, res) => {
     const randomAdj = adj[Math.floor(Math.random() * adj.length)];
     const randomNoun = noun[Math.floor(Math.random() * noun.length)];
     res.render("bandname.ejs", {adjective: randomAdj, noun: randomNoun});
@@ -86,7 +86,7 @@ app.post("/todolist", (req, res) => {
 });
 
 // render DPE result
-app.post("/submit", (req, res) => {
+app.post("/submitDiag", (req, res) => {
     const result = Math.round(req.body["consoElec"] * coeff / req.body["surfaceLogement"]);
     commentResult(result);
     res.render("diag.ejs", { 
