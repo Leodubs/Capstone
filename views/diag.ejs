@@ -9,7 +9,7 @@
 </head>
 
 <body id="app">
-  <form class="container" action="/submit" method="post">
+  <form class="white-container" action="/submit" method="post">
     
     <div class="horizontal-container">
       <h4>Score de votre logement : 
@@ -19,18 +19,30 @@
       </h4>
     </div>
 
-    <h2 id="title">
+    <h2>
       Diagnostic de performance énergétique
     </h2>
 
-    <div class="answer-container">
-      <input type="text" name="consoElec" id="consoInput" placeholder="Conso électriques" autofocus>
-      <label for="consoElec"> kWh/an</label>
-      <input type="text" name="surfaceLogement" id="surfaceInput" placeholder="Surface du logement">
-      <label for="surfaceLogement"> m²</label>
-    </div>
-    
-    <button type="submit">Calculer votre DPE</button>
+    <!-- if inputs have been submitted, display illustration.ejs block of code -->
+    <% if (locals.dpeScore) { %>
+      <h3 id="comment">
+        <%= dpeComment %>
+      </h3>
+      <%- include("partials/illustration.ejs") %>
+
+        <!-- and the original 'restart' button (how does it restart?) -->
+        <button type="submit">Recalculer votre DPE</button>
+
+      <!-- otherwise, display the fields and button -->
+      <% } else { %>
+      <div class="answer-container">
+        <input type="text" name="consoElec" id="consoInput" placeholder="Conso électriques" autofocus>
+        <label for="consoElec"> kWh/an</label>
+        <input type="text" name="surfaceLogement" id="surfaceInput" placeholder="Surface du logement">
+        <label for="surfaceLogement"> m²</label>
+      </div>
+      <button type="submit">Calculer votre DPE</button>
+      <% } %>
 
   </form>
 
