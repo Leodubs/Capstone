@@ -5,6 +5,10 @@ a, body {
     color: hotpink;
     text-decoration: none;
   }
+
+a:hover {
+    color: white;
+}
   
   main {
     position: absolute;
