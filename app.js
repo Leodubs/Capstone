@@ -36,20 +36,12 @@ app.get("/knowledge", (req, res) => {
         dateOfTheDay: new Date().toLocaleDateString("fr-FR", {weekday : "long", day: "numeric", month: "long"}),
         lessonsDone: [
         "Web Design", 
-        "HTML 5",  
-        "CSS 3",  
-        "Bootstrap 4",  
+        "HTML 5, CSS 3, Bootstrap 4",  
         "Javascript ES6",  
-        "DOM Manipulation",  
-        "jQuery",  
-        "Bash Command Line",  
-        "Git, GitHub and Version Control",  
-        "Node.js",  
-        "NPM",  
-        "Express.js",  
-        "EJS",  
-        "REST",  
-        "APIs",  
+        "DOM Manipulation, jQuery",  
+        "Bash Command Line, Git, GitHub and Version Control",  
+        "Node.js, NPM, Express.js, EJS",  
+        "REST, APIs",  
         ],
         lessonsToCome: lessons
     }
@@ -164,21 +156,16 @@ const commentG = "G → logement très énergivore";
 const colorG = "#ff3338;";
 
     // todolist
-const items = ["Diagnostic de performance énergétique", "Fromage de chèvre cru maison", "Routine 🤸🪑🤸", "API champagne"];
+const items = ["Diagnostic de performance énergétique", "100 raisons d'être en retard", "DiY 🐐 raw cheese", "Routine 🤸🪑🤸", "Champagne everywhere"];
 
     // knowledge
 const lessons = [
-"Databases",  
-"SQL",  
-"MongoDB",  
-"Mongoose",  
-"Authentication",  
-"Firebase",  
-"React.js",  
-"React Hooks",   
+"Databases, SQL",  
+"MongoDB, Mongoose",  
+"Authentication, Firebase",  
+"React.js, React Hooks",   
 "Web3 Development on the Internet Computer",  
-"Blockchain technology",  
-"Token contract development",  
+"Blockchain technology, Token contract development",  
 "NFT minting, buying and selling logic"
 ];
 
