@@ -28,7 +28,7 @@ button {
 }
 
 #d {
-  background-image: url("public/images/D_small.jpeg");
+  background-image: url("/images/D_small.jpeg");
   background-size: contain;
 }
 
@@ -39,12 +39,12 @@ button {
 }
 
 #g {
-  background-image: url("public/images/G_small.jpeg");
+  background-image: url("/public/images/G_small.jpeg");
   background-size: contain;
 }
 
 #q {
-  background-image: url("public/images/Q_small.jpeg");
+  background-image: url("images/Q_small.jpeg");
   background-size: contain;
 }
 
