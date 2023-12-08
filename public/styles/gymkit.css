@@ -28,39 +28,39 @@ button {
 }
 
 #d {
-  background-image: url("images/D_small.jpeg");
+  background-image: url("/images/D_small.jpeg");
   background-size: contain;
 }
 
 
 #f {
-  background-image: url("images/F_small.jpeg");
+  background-image: url("/images/F_small.jpeg");
   background-size: contain;
 }
 
 #g {
-  background-image: url("images/G_small.jpeg");
+  background-image: url("/images/G_small.jpeg");
   background-size: contain;
 }
 
 #q {
-  background-image: url("images/Q_small.jpeg");
+  background-image: url("/images/Q_small.jpeg");
   background-size: contain;
 }
 
 #a {
-  background-image: url("images/A_small.jpeg");
+  background-image: url("/images/A_small.jpeg");
   background-size: contain;
 }
 
 #i {
-  background-image: url("images/I_small.jpeg");
+  background-image: url("/images/I_small.jpeg");
   background-size: contain;
 }
 
 #all {
   display: none;
-  background-image: url("images/monkey.gif");
+  background-image: url("/images/monkey.gif");
   background-size: contain;
 }
 
