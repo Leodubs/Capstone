@@ -64,7 +64,29 @@ app.get("/gymkit", (req, res) => {
     const trackList = ["sounds/intro.mp3", "sounds/ElevenLabs_Emily_dos.mp3", "sounds/ElevenLabs_Emily_fessiers.mp3", "sounds/ElevenLabs_Emily_gainage.mp3", "sounds/BigSpeak_quadriceps.mp3"];
     // constante notification audio
     const errorTrack =  "sounds/notify.mp3";
-    res.render("gymkit.ejs", tracklist, errorTrack);
+    // PLAYER
+    // constantes & fonctions du lecteur "welcome" qui jouera l'intro + toutes les pistes/parties détaillées dans une version ultérieure
+    const audioPlayer = document.getElementById("welcome");
+    // réglage du volume
+    audioPlayer.volume = 0.5;
+    // source initiale du player
+    audioPlayer.src = trackList[0];
+    // KIT AUDIO
+    // NOTE : querySelectorAll renvoie une liste d'éléments ! → const listOfButtons = document.querySelectorAll("button");
+    readyToLaunch = "ready to play → ";
+    let sound = new Audio;
+    sound.volume = 0.5;
+    // attribution du click-event à tous les boutons // SHORT VERSION :
+    document.querySelectorAll('.selection').forEach( button => {
+        button.onclick = function () {
+            btnClicked = button.id;
+            audioToPlay = button.innerText; // innerHTML retourne mal les caractères spéciaux
+            console.log(btnClicked + " has been clicked : " + readyToLaunch + audioToPlay);
+            buttonAnimation(btnClicked);
+            makeSound(btnClicked);
+        }
+    });
+    res.render("gymkit.ejs", tracklist, errorTrack, audioPlayer, sound, button);
 });
 
 // send to the main todolist of projects
