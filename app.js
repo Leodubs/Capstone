@@ -53,15 +53,22 @@ app.get("/bandname", (req, res) => {
     res.render("bandname.ejs");
 });
 
+// send to the diag (DPE)
+app.get("/diag", (req, res) => {
+    res.render("diag.ejs");
+});
+
+// send to the gym kit
+app.get("/gymkit", (req, res) => {
+    res.render("gymkit.html");
+});
+
 // send to the main todolist of projects
 app.get("/todolist", (req, res) => {
     res.render("todolist.ejs", {newListItems: items});
 });
 
-// send to the diag (DPE)
-app.get("/diag", (req, res) => {
-    res.render("diag.ejs");
-});
+
 
 // render bandname
 app.post("/submitBandname", (req, res) => {
