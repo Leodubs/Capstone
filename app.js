@@ -60,7 +60,7 @@ app.get("/diag", (req, res) => {
 
 // send to the gym kit
 app.get("/gymkit", (req, res) => {
-    res.render("gymkit.html");
+    res.render("gymkit.ejs");
 });
 
 // send to the main todolist of projects
