@@ -60,7 +60,7 @@ app.get("/diag", (req, res) => {
 
 // send to the gym kit
 app.get("/gymkit", (req, res) => {
-    const trackList = ["/sounds/intro.mp3", "sounds/ElevenLabs_Emily_dos.mp3", "sounds/ElevenLabs_Emily_fessiers.mp3", "sounds/ElevenLabs_Emily_gainage.mp3", "sounds/BigSpeak_quadriceps.mp3"];
+    const trackList = ["sounds/intro.mp3", "sounds/ElevenLabs_Emily_dos.mp3", "sounds/ElevenLabs_Emily_fessiers.mp3", "sounds/ElevenLabs_Emily_gainage.mp3", "sounds/BigSpeak_quadriceps.mp3"];
     res.render("gymkit.ejs", trackList);
 });
 
