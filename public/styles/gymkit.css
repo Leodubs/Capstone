@@ -28,7 +28,7 @@ button {
 }
 
 #d {
-  background-image: url("images/D_small.jpeg");
+  background-image: url("/images/D_small.jpeg");
   background-size: contain;
 }
 
