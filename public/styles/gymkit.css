@@ -102,5 +102,6 @@ button {
 }
 
 figure {
+  display: none;
   margin: 10%;
 }
