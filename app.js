@@ -36,14 +36,14 @@ app.get("/knowledge", (req, res) => {
         dateOfTheDay: new Date().toLocaleDateString("fr-FR", {weekday : "long", day: "numeric", month: "long"}),
         lessonsDone: [
         "Web Design", 
-        "HTML 5, CSS 3, Bootstrap 4",  
+        "HTML 5", 
+        "CSS 3, flexbox, grid", 
+        "Bootstrap 4-5",  
         "Javascript ES6",  
-        "DOM Manipulation, jQuery",  
+        "DOM manipulation, jQuery",  
         "Command Line",  
         "Node.js, NPM, Express.js, EJS",  
-        "REST, APIs",  
-        "Databases, SQL",  
-        "MongoDB, Mongoose", 
+        "REST, APIs,"Databases, SQL",  
         "PostgreSQL",
         "Authentication, Firebase",  
         ],
@@ -176,8 +176,10 @@ const items = ["Diagnostic de performance énergétique", "100 raisons d'être e
 const lessons = [
 "React.js, React Hooks",
 "Git, GitHub and Version Control",
+"Deployment with GitHub Pages",
 "Web3 Development on the Internet Computer",  
-"Blockchain technology, Token contract development",  
+"Blockchain technology", 
+"Token contract development",  
 "NFT minting, buying and selling logic"
 ];
 
