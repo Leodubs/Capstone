@@ -43,7 +43,7 @@ app.get("/knowledge", (req, res) => {
         "DOM manipulation, jQuery",  
         "Command Line",  
         "Node.js, NPM, Express.js, EJS",  
-        "REST, APIs,"Databases, SQL",  
+        "REST, APIs, Databases, SQL",  
         "PostgreSQL",
         "Authentication, Firebase",  
         ],
