@@ -39,7 +39,7 @@ app.get("/knowledge", (req, res) => {
         "HTML 5, CSS 3, Bootstrap 4",  
         "Javascript ES6",  
         "DOM Manipulation, jQuery",  
-        "Bash Command Line, Git, GitHub and Version Control",  
+        "Command Line",  
         "Node.js, NPM, Express.js, EJS",  
         "REST, APIs",  
         "Databases, SQL",  
@@ -174,7 +174,8 @@ const items = ["Diagnostic de performance énergétique", "100 raisons d'être e
 
     // knowledge
 const lessons = [
-"React.js, React Hooks",   
+"React.js, React Hooks",
+"Git, GitHub and Version Control",
 "Web3 Development on the Internet Computer",  
 "Blockchain technology, Token contract development",  
 "NFT minting, buying and selling logic"
