@@ -42,6 +42,10 @@ app.get("/knowledge", (req, res) => {
         "Bash Command Line, Git, GitHub and Version Control",  
         "Node.js, NPM, Express.js, EJS",  
         "REST, APIs",  
+        "Databases, SQL",  
+        "MongoDB, Mongoose", 
+        "PostgreSQL",
+        "Authentication, Firebase",  
         ],
         lessonsToCome: lessons
     }
@@ -170,9 +174,6 @@ const items = ["Diagnostic de performance énergétique", "100 raisons d'être e
 
     // knowledge
 const lessons = [
-"Databases, SQL",  
-"MongoDB, Mongoose",  
-"Authentication, Firebase",  
 "React.js, React Hooks",   
 "Web3 Development on the Internet Computer",  
 "Blockchain technology, Token contract development",  
