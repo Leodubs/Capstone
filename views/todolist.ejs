@@ -14,8 +14,14 @@
     
 
     <div class="box">
+        <!-- boucle pour items exécutés -->
+        <% for(let i=0; i<doneItems.length; i++){%>
+        <div class="item">
+            <input type="checkbox">
+            <p><%= doneItems[i] %></p>
+        </div>
+        <% } %>
         <!-- boucle pour chaque nouvelle entrée d'item -->
-        <%= doneItems %>
         <% for(let i=0; i<newListItems.length; i++){%>
         <div class="item">
             <input type="checkbox">
