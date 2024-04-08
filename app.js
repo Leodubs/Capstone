@@ -70,7 +70,7 @@ app.get("/gymkit", (req, res) => {
 
 // send to the main todolist of projects
 app.get("/todolist", (req, res) => {
-    res.render("todolist.ejs", {newListItems: items, doneItems: itemsDone;});
+    res.render("todolist.ejs", {newListItems: items, doneItems: itemsDone});
 });
 
 
