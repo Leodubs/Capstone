@@ -42,7 +42,7 @@ h2 {
 }
 
 /* +p sélectionne tous les éléments checkés (cochés) en ciblant tous les éléments paragraphes venant après le div (pour les rayer) */
-.checked input:checked+p {
+.checked, input:checked+p {
   text-decoration: line-through;
   text-decoration-color: #A683E3;
 }
