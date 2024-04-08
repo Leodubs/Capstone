@@ -16,8 +16,8 @@
     <div class="box">
         <!-- boucle pour items exécutés -->
         <% for(let i=0; i<doneItems.length; i++){%>
-        <div class="item" id="checked">
-            <input type="checkbox">
+        <div class="item">
+            <input class="checked">
             <p><%= doneItems[i] %></p>
         </div>
         <% } %>
