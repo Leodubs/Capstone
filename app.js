@@ -170,8 +170,8 @@ const commentG = "G → logement très énergivore";
 const colorG = "#ff3338;";
 
     // todolist
-const items = ["100 raisons d'être en retard", "DiY 🐐 raw cheese", "Routine 🤸🪑🤸", "Champagne everywhere"];
-const itemsDone = ["Diagnostic de performance énergétique"];
+const items = ["Recipe 🐐 cheese", "100 raisons d'être en retard", "Routine 🤸🪑🤸", "Champagne everywhere"];
+const itemsDone = ["Portfolio", "Bandname generator", "Diagnostic de performance énergétique"];
 
     // knowledge
 const lessons = [
